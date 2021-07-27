@@ -2,9 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.kovko</groupId>
-  <artifactId>maven-hello-plugin</artifactId>
+  <artifactId>hello-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <version>1.0</version>
+  <properties>
+    <maven.plugin.skipErrorNoDescriptorsFound>true</maven.plugin.skipErrorNoDescriptorsFound>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -17,7 +20,7 @@
       </plugin>
     </plugins>
   </build>
-  <name>Maven Mojo</name>
+  <name>hello-maven-plugin</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
